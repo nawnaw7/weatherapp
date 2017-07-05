@@ -1,0 +1,187 @@
+#city, #date, #time, #cur-summary, .tab-content {
+    font-family: 'Istok Web', sans-serif;
+}
+
+/****** HEADER ******/
+.full-width-image {
+  height: 400px;
+  background: url("Images/wind.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.btn-group {
+    float: right;
+    margin-top: 30px;
+}
+
+#city {
+    color: rgba(238, 236, 234, 0.8); /*city*/
+    display: inline;
+    position: relative;
+    top: 20px;
+    border-bottom: 2px solid rgba(176, 170, 168, 0.6); /*border*/
+}
+
+#date, #time {
+    color: rgba(232, 232, 232, 0.6); /*date*/
+    position: relative;
+    top: 40px;
+    line-height: 13px;
+}
+
+#cur-summary {
+    color: rgba(238, 236, 234, 0.8); /*summary*/
+    margin-top: 70px;
+    font-size: 200%;
+}
+
+
+/****** CONTENT ******/
+ul.nav.nav-tabs {
+    background-color: rgba(0, 0, 0, .3);
+    margin-top: -41px;
+}
+
+ul.nav.nav-tabs li a {
+    color: white;
+}
+
+ul.nav.nav-tabs li a:focus, ul.nav.nav-tabs li a:active {
+    color: rgba(46, 44, 43, 0.8);
+}
+
+.col-sm-2, .col-sm-4:nth-child(2), .col-sm-4:nth-child(3) {
+    border-left: 1px solid rgba(74, 175, 70, 0.5);
+}
+
+#cur-status, #cur-status2, #tomorrow-status, #tomorrow-status2, #third-status, #third-status2, #fourth-status, #fourth-status2 {
+    text-align: center;
+}
+
+#cur-status, #tomorrow-status, #third-status, #fourth-status {
+    margin-top: 10%;
+}
+
+#cur-status2, #tomorrow-status2, #third-status2, #fourth-status2 {
+    margin-bottom: 20%;
+}
+
+#tomorrow-status2, #third-status2, #fourth-status2 {
+    margin-top: -15px;
+}
+
+
+#today-icon {
+    font-size: 520%;
+    padding-left: 30px;
+    color: rgba(46, 44, 43, 0.9);
+} 
+
+#tomorrow-icon, #third-icon, #fourth-icon {
+    font-size: 450%;
+    color: rgba(74, 175, 70, 0.9);
+}
+
+#cur-deg {
+    font-size: 500%;
+    color: rgba(74, 175, 70, 0.9);
+}
+
+#tomorrow-deg-max, #tomorrow-deg-min, #third-deg-max, #third-deg-min, #fourth-deg-max, #fourth-deg-min {
+    font-size: 200%;
+}
+
+#tomorrow-deg-max, #third-deg-max, #fourth-deg-max {
+    color: crimson;
+}
+
+#tomorrow-deg-min, #third-deg-min, #fourth-deg-min {
+    color: skyblue;
+    padding-left: 20px;
+}
+
+.col-sm-4 h3 {
+    font-size: 120%;
+    text-align: center;
+    margin-top: 15%;
+    color: rgba(46, 44, 43, 0.8);
+}
+
+#tomorrow-summary, #third-summary, #fourth-summary {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 130%;
+    color: rgba(36, 36, 36, 0.9);
+}
+
+.more-info:nth-child(1) {
+    margin-top: 15%;
+}
+
+.more-info {
+    text-align: center;
+    color: rgba(46, 44, 43, 0.8);
+    font-size: 120%;
+}
+
+.speed-toggle {
+    margin-right: 15px;
+}
+
+.icons {
+    font-size: 140%;
+    color: darkslategray;
+    padding-right: 5px;
+}
+
+.icons:nth-child(3) {
+    padding-left: 20px;
+}
+
+.hourly-icons {
+    font-size: 4.7vw;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: rgba(74, 175, 70, 0.9);
+}
+
+.hourly-degs {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 120%;
+    font-weight: 500;
+}
+
+.hourly-times {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    color: rgba(46, 44, 43, 0.8);
+}
+
+
+/****** FOOTER ******/
+.footer {
+    height: 50px !important;
+}
+
+#credits {
+    color: white;
+    text-align: center;
+    margin-top: 7px;
+    font-size: 90%;
+}
+
+#darksky {
+    color: white;
+    text-align: left;
+    position: absolute;
+    top: 16px;
+    right: 10px;
+    font-size: 80%;
+}
+
+.footer a {
+    color: rgba(74, 175, 70, 0.9);
+}
