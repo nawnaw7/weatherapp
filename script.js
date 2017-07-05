@@ -229,25 +229,25 @@ function pictures (apiData) {
     var picLink;
         
     if (apiData === 'clear-day') {
-        picLink = 'Images/sunny.jpg';
+        picLink = 'sunny.jpg';
     } else if (apiData === 'clear-night') {
-        picLink = 'Images/clear-night.jpg';
+        picLink = 'clear-night.jpg';
     } else if (apiData === 'partly-cloudy-day') {
-        picLink = 'Images/mostly-cloudy.jpg';
+        picLink = 'mostly-cloudy.jpg';
     } else if (apiData === 'partly-cloudy-night') {
-        picLink = 'Images/cloudy-night.jpg';
+        picLink = 'cloudy-night.jpg';
     } else if (apiData === 'cloudy') {
-        picLink = 'Images/cloudy.jpg';
+        picLink = 'cloudy.jpg';
     } else if (apiData === 'rain') {
-        picLink = 'Images/rain.jpg';
+        picLink = 'rain.jpg';
     } else if (apiData === 'sleet') {
-        picLink = 'Images/sleet.jpg';
+        picLink = 'sleet.jpg';
     } else if (apiData === 'snow') {
-        picLink = 'Images/snow';
+        picLink = 'snow';
     } else if (apiData === 'wind') {
-        picLink = 'Images/wind.jpg';
+        picLink = 'wind.jpg';
     } else if (apiData === 'fog') {
-        picLink = 'Images/fog.jpg';
+        picLink = 'fog.jpg';
     }
 
     return picLink;
