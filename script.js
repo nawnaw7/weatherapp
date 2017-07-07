@@ -73,11 +73,11 @@ var getForecast = function(data) {
     
     // Change text color according to pictures
     if (data.currently.icon === 'clear-day' || data.currently.icon === 'clear-night' || data.currently.icon === 'partly-cloudy-night' || data.currently.icon === 'wind') {
-        $('#city, #cur-summary').css('color', 'rgba(238, 236, 234, 0.8)');
-        $('#date, #time').css('color', 'rgba(232, 232, 232, 0.6)');
+        $('#city, #cur-summary').css('color', 'rgba(238, 236, 234, 0.9)');
+        $('#date, #time').css('color', 'rgba(232, 232, 232, 0.8)');
     } else {
-        $('#city, #cur-summary').css('color', 'rgba(46, 44, 43, 0.8)');
-        $('#date, #time').css('color', 'rgba(42, 41, 41, 0.6)');
+        $('#city, #cur-summary').css('color', 'rgba(46, 44, 43, 0.9)');
+        $('#date, #time').css('color', 'rgba(42, 41, 41, 0.8)');
     }
     
    
@@ -255,7 +255,7 @@ function pictures (apiData) {
 // Convert unix time
 function unixTimeToDay(data) {
     var date = new Date(data.time * 1000);
-    var dayName = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    var dayName = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
     return dayName[date.getDay()];
 };
 

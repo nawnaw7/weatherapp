@@ -4,7 +4,7 @@
 
 /****** HEADER ******/
 .full-width-image {
-  height: 450px;
+  height: 500px;
   background: url("images/wind.jpg") no-repeat center center fixed;
   background-size: cover;
 }
@@ -172,6 +172,10 @@ ul.nav.nav-tabs li a:focus, ul.nav.nav-tabs li a:active {
     .btn-group {
         height: 43px;
         text-align: center;
+    }
+    
+    .more-info {
+        font-size: 100%;
     }
 }
 
