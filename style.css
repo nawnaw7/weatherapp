@@ -4,7 +4,7 @@
 
 /****** HEADER ******/
 .full-width-image {
-  height: 400px;
+  height: 450px;
   background: url("images/wind.jpg") no-repeat center center fixed;
   background-size: cover;
 }
@@ -19,7 +19,6 @@
     display: inline;
     position: relative;
     top: 20px;
-    border-bottom: 2px solid rgba(176, 170, 168, 0.6); /*border*/
 }
 
 #date, #time {
@@ -50,8 +49,8 @@ ul.nav.nav-tabs li a:focus, ul.nav.nav-tabs li a:active {
     color: rgba(46, 44, 43, 0.8);
 }
 
-.col-sm-2, .col-sm-4:nth-child(2), .col-sm-4:nth-child(3) {
-    border-left: 1px solid rgba(74, 175, 70, 0.5);
+.col, .col-sm-4:nth-child(2), .col-sm-4:nth-child(3) {
+    border-left: 1px solid rgba(216, 216, 216, 0.3);
 }
 
 #cur-status, #cur-status2, #tomorrow-status, #tomorrow-status2, #third-status, #third-status2, #fourth-status, #fourth-status2 {
@@ -63,7 +62,7 @@ ul.nav.nav-tabs li a:focus, ul.nav.nav-tabs li a:active {
 }
 
 #cur-status2, #tomorrow-status2, #third-status2, #fourth-status2 {
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 }
 
 #tomorrow-status2, #third-status2, #fourth-status2 {
@@ -100,7 +99,7 @@ ul.nav.nav-tabs li a:focus, ul.nav.nav-tabs li a:active {
     padding-left: 20px;
 }
 
-.col-sm-4 h3 {
+.col h3 {
     font-size: 120%;
     text-align: center;
     margin-top: 15%;
@@ -112,6 +111,7 @@ ul.nav.nav-tabs li a:focus, ul.nav.nav-tabs li a:active {
     margin-top: 10%;
     font-size: 130%;
     color: rgba(36, 36, 36, 0.9);
+  font-style: italic;
 }
 
 .more-info:nth-child(1) {
@@ -139,7 +139,7 @@ ul.nav.nav-tabs li a:focus, ul.nav.nav-tabs li a:active {
 }
 
 .hourly-icons {
-    font-size: 4.7vw;
+    font-size: 60px;
     display: block;
     text-align: center;
     margin-top: 20px;
@@ -160,26 +160,34 @@ ul.nav.nav-tabs li a:focus, ul.nav.nav-tabs li a:active {
     color: rgba(46, 44, 43, 0.8);
 }
 
+@media only screen and (max-width: 768px) {
+  .more-info:nth-child(4), .hourly-times {
+    margin-bottom: 20px;
+  }
+  
+  #cur-status, {
+    margin-top: 15px;
+  }
+  
+    .btn-group {
+        height: 43px;
+        text-align: center;
+    }
+}
 
 /****** FOOTER ******/
 .footer {
-    height: 50px !important;
-}
-
-#credits {
-    color: white;
+    padding-top: 20px;
+    height: 50px;
+    color: black;
     text-align: center;
-    margin-top: 7px;
+    margin-top: 50px;
     font-size: 90%;
+    line-height: 5px;
 }
 
 #darksky {
-    color: white;
-    text-align: left;
-    position: absolute;
-    top: 16px;
-    right: 10px;
-    font-size: 80%;
+  padding-bottom: 20px;
 }
 
 .footer a {

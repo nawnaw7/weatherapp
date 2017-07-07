@@ -8,7 +8,9 @@ $(window).on('load', function () {
             var url = 'https://api.darksky.net/forecast/08fe70f4acbb5f48981535f29ee9a4d8/'+ lat + ',' + lon + '?callback=?';
       
             $.getJSON(url, getForecast);
-            
+            $.getJSON("https://maps.googleapis.com/maps/api/geocode/json?latlng="+lat+","+lon+"&key=AIzaSyDDFZmBU6s4WfuTU1abbslOKnRlNqVkQ98", function(googleLocation) {
+                $("#city").text(googleLocation.results[3].formatted_address);
+            });
         });
       
     } else {
@@ -71,18 +73,15 @@ var getForecast = function(data) {
     
     // Change text color according to pictures
     if (data.currently.icon === 'clear-day' || data.currently.icon === 'clear-night' || data.currently.icon === 'partly-cloudy-night' || data.currently.icon === 'wind') {
-        $('#city').css({'color': 'rgba(238, 236, 234, 0.8)', 'border-bottom-color': 'rgba(176, 170, 168, 0.6)'});
+        $('#city, #cur-summary').css('color', 'rgba(238, 236, 234, 0.8)');
         $('#date, #time').css('color', 'rgba(232, 232, 232, 0.6)');
-        $('#cur-summary').css('color', 'rgba(238, 236, 234, 0.8)');
     } else {
-        $('#city').css({'color': 'rgba(46, 44, 43, 0.8)', 'border-bottom-color': 'rgba(42, 41, 41, 0.6)'});
+        $('#city, #cur-summary').css('color', 'rgba(46, 44, 43, 0.8)');
         $('#date, #time').css('color', 'rgba(42, 41, 41, 0.6)');
-        $('#cur-summary').css('color', 'rgba(46, 44, 43, 0.8)');
     }
     
    
     // Main today forecast
-    $('#city').html(data.timezone);
     $('#cur-summary').html(data.currently.summary);
     $('.full-width-image').css({'background': 'url(' + pictures(data.currently.icon) + ') no-repeat center center fixed', 'background-size': 'cover'});
     $('#cur-humid').html(Math.round(data.currently.humidity * 100));
