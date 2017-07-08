@@ -86,6 +86,7 @@ var getForecast = function(data) {
     $('.full-width-image').css({'background': 'url(' + pictures(data.currently.icon) + ') no-repeat center center fixed', 'background-size': 'cover'});
     $('#cur-humid').html(Math.round(data.currently.humidity * 100));
     $('#today-icon').attr('class', iconClasses(data.currently.icon));
+    $('#cur-deg').html(tempConvert(data.currently.temperature));
     
     
     // Hourly forecast
