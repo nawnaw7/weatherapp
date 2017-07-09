@@ -49,9 +49,6 @@ ul.nav.nav-tabs li a:focus, ul.nav.nav-tabs li a:active {
     color: rgba(46, 44, 43, 0.8);
 }
 
-#weather-tabs-panel {
-    max-width: 1920px;
-}
 
 .col, .col-sm-4:nth-child(2), .col-sm-4:nth-child(3) {
     border-left: 1px solid rgba(216, 216, 216, 0.3);
