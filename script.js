@@ -94,7 +94,7 @@ var getForecast = function(data) {
         var hourlyData = data.hourly.data;
         var hourlyArr = [];
 
-        for (var i = 0; i < hourlyData.length; i += 4) {
+        for (var i = 1; i < hourlyData.length; i += 4) {
             hourlyArr.push(hourlyData[i]);
         }
 
