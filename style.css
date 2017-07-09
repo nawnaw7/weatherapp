@@ -197,3 +197,8 @@ ul.nav.nav-tabs li a:focus, ul.nav.nav-tabs li a:active {
 .footer a {
     color: rgba(74, 175, 70, 0.9);
 }
+
+.footer a:hover {
+    text-decoration: none;
+    color: rgba(74, 175, 70, 0.5);
+}
