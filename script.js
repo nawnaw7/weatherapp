@@ -69,17 +69,7 @@ var getForecast = function(data) {
         thirdForecast();
         fourthForecast();
     });
-    
-    
-    // Change text color according to pictures
-    if (data.currently.icon === 'clear-day' || data.currently.icon === 'clear-night' || data.currently.icon === 'partly-cloudy-night' || data.currently.icon === 'wind') {
-        $('#city, #cur-summary').css('color', 'rgba(238, 236, 234, 0.9)');
-        $('#date, #time').css('color', 'rgba(232, 232, 232, 0.8)');
-    } else {
-        $('#city, #cur-summary').css('color', 'rgba(46, 44, 43, 0.9)');
-        $('#date, #time').css('color', 'rgba(42, 41, 41, 0.8)');
-    }
-    
+   
    
     // Main today forecast
     $('#cur-summary').html(data.currently.summary);

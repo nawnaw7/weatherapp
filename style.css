@@ -4,32 +4,56 @@
 
 /****** HEADER ******/
 .full-width-image {
-  height: 500px;
+  height: 550px;
   background: url("images/wind.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
-.btn-group {
-    float: right;
-    margin-top: 30px;
+.info-pannel {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    top: 80px;
+    left: 30px;
+    padding: 0 40px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
+.btn-group {
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+}
+
+
+.btn.active,
+.btn-outline-secondary:hover,
+.btn-outline-secondary:visited,
+.btn-outline-secondary:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
 #city {
-    color: rgba(238, 236, 234, 0.8); /*city*/
+    color: white; /*city*/
     display: inline;
     position: relative;
-    top: 20px;
+    top: 30px;
 }
 
 #date, #time {
-    color: rgba(232, 232, 232, 0.6); /*date*/
+    color: white; /*date*/
     position: relative;
     top: 40px;
     line-height: 13px;
 }
 
 #cur-summary {
-    color: rgba(238, 236, 234, 0.8); /*summary*/
+    color: white; /*summary*/
     margin-top: 70px;
     font-size: 200%;
 }
@@ -73,7 +97,7 @@ ul.nav.nav-tabs li a:focus, ul.nav.nav-tabs li a:active {
 
 #today-icon {
     font-size: 520%;
-    padding-left: 30px;
+    padding-left: 20px;
     color: rgba(46, 44, 43, 0.9);
 } 
 
@@ -112,7 +136,7 @@ ul.nav.nav-tabs li a:focus, ul.nav.nav-tabs li a:active {
     margin-top: 10%;
     font-size: 130%;
     color: rgba(36, 36, 36, 0.9);
-  font-style: italic;
+    font-style: italic;
 }
 
 .more-info:nth-child(1) {
@@ -140,23 +164,23 @@ ul.nav.nav-tabs li a:focus, ul.nav.nav-tabs li a:active {
 }
 
 .hourly-icons {
-    font-size: 60px;
+    font-size: 50px;
     display: block;
     text-align: center;
-    margin-top: 20px;
-    color: rgba(74, 175, 70, 0.9);
+    margin-top: 25px;
+    color: rgba(74, 175, 70, 0.8);
 }
 
 .hourly-degs {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 17px;
     font-size: 120%;
     font-weight: 500;
 }
 
 .hourly-times {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 60px;
     color: rgba(46, 44, 43, 0.8);
 }
@@ -169,37 +193,33 @@ ul.nav.nav-tabs li a:focus, ul.nav.nav-tabs li a:active {
   #cur-status, {
     margin-top: 15px;
   }
-  
-    .btn-group {
-        height: 43px;
-        text-align: center;
-    }
     
     .more-info {
         font-size: 100%;
+    }
+    
+    .info-pannel {
+        left: 0;
     }
 }
 
 /****** FOOTER ******/
 .footer {
-    padding-top: 30px;
+    padding-top: 20px;
     height: 50px;
     color: black;
     text-align: center;
-    margin-top: 50px;
-    font-size: 90%;
+    margin-top: 30px;
+    font-size: 85%;
     line-height: 5px;
 }
 
-#darksky {
-  padding-bottom: 20px;
-}
 
 .footer a {
     color: rgba(74, 175, 70, 0.9);
 }
 
-.footer a:hover {
+.footer a:hover, .footer a:visited {
     text-decoration: none;
     color: rgba(74, 175, 70, 0.5);
 }
