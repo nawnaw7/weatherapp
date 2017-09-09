@@ -179,6 +179,7 @@ var getForecast = function(data) {
     fourthForecast();
     
     // Change the day in tabs
+    $('#tab2').html(unixTimeToDay(data.daily.data[1]));
     $('#tab3').html(unixTimeToDay(data.daily.data[2]));
     $('#tab4').html(unixTimeToDay(data.daily.data[3]));
 }
